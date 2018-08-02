@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/login/login",
+    "pages/trainList/trainList",
+    "pages/learn/learn"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0a5399",
+    "navigationBarTitleText": "中安食品安全培训网",
+    "navigationBarTextStyle":"#fff"
+  }
+}

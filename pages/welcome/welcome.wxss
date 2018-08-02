@@ -1,0 +1,56 @@
+/* pages/welcome/welcome.wxss */
+page{
+  height: 100%;
+}
+
+.container{
+  height: 100%;
+  padding: 1rpx;
+}
+
+.animate{
+  width: 400rpx;
+  height: 400rpx;
+  margin: 300rpx auto;
+  position: relative;
+}
+
+.outer{
+  height: 400rpx;
+  width: 400rpx;
+  animation: Rrotate 5s linear infinite;
+}
+
+.within{
+  position: absolute;
+  height: 214rpx;
+  width: 160rpx;
+  top: 86rpx;
+  left: 115rpx;
+}
+
+@keyframes Rrotate {
+    form {
+        transform: rotate(0deg);
+        transform-origin: 188rpx 206rpx;
+    }
+    to {
+        transform: rotate(360deg);
+        transform-origin: 188rpx 206rpx;
+    }
+}
+
+.text{
+  text-align: center;
+  padding: 30rpx 0;
+}
+
+.name{
+  font-size: 40rpx;
+  color: #666;
+}
+
+.slogan{
+  font-size: 36rpx;
+  color: #999;
+}

@@ -1,0 +1,25 @@
+<view class="container">
+  <view class='logoCont'>
+    <view class='logoBox'>
+      <image class='logo' src='img/logo.png'></image>
+    </view>
+  </view>
+  <view class='form'>
+    <view class='section'>
+      <image class='icon' src='img/phone.png'></image>
+      <input placeholder='请填写学员账号（手机号）' auto-focus type='number' maxlength="11" bindblur='telBlur'></input>
+    </view>
+    <view class='section'>
+      <image class='icon' src='img/code.png'></image>
+      <input placeholder='请填写密码' type='text' password='true' bindblur='passwordBlur'></input>
+    </view>
+    <view class='section'>
+      <image class='icon' src='img/edit.png'></image>
+      <input placeholder='请填写验证码' type='number' maxlength='4' bindblur='codeBlur'></input>
+      <image class='code' bindtap="getCodeImg" src='{{imgCode}}'></image>
+    </view>
+    <view class='section'>
+      <button type='primary' bindtap='submit' disabled='{{disabled}}' loading='{{loading}}'>开始学习</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='videoCont'>
+    <video id="polyvVideo" class="vp-v" initial-time="{{time}}" src="{{videoSrc}}" bindplay="playCtrl" bindtimeupdate="timeUpdate" bindpause="pauseCtrl" bindfullscreenchange="screenchange"></video>
+    <!-- <image src='img/play.png'></image> -->
+  </view>
+  <scroll-view scroll-y style='height: 786rpx'>
+    <view class='section' wx:for="{{list}}" wx:for-item="i" wx:key="unique">
+      <view class='title'><image class='unit' src='img/unit.png'></image>{{i.name}}</view>
+      <view class='class {{vid == j.vid ? "active" : ""}}' wx:for="{{i.list}}" wx:for-item="j" bindtap='changeCourse' data-cid="{{j.cid}}" data-vid="{{j.vid}}" data-time="{{j.time}}" wx:key="unique">
+        <text class='name'>{{j.cname}}</text>
+        <text class='type b' wx-if="{{j.cl_type == 1}}">必修</text>
+        <text class='type x' wx-if="{{j.cl_type == 0}}">选修</text>
+        <text class='option'>{{j.rate}}%</text>
+      </view>
+    </view>
+  </scroll-view>
+  <camera wx:if="{{isCamera}}" device-position="front" flash="off" binderror="error" style="width: 100%; height: 100%;" binderror="cameraError"></camera>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container'>
+  <view class='animate'>
+    <image class='outer' aspectFit src='img/logo_r.png'></image>
+    <image class='within' src='img/logo.png'></image>
+  </view>
+  <view class='text'>
+    <view class='name'>中安食品安全培训网</view>
+    <view class='slogan'>我们让食品更安全</view>
+  </view>
+</view>

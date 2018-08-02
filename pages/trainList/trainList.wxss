@@ -1,0 +1,54 @@
+page{
+  height: 100%
+}
+.card{
+  width: 710rpx;
+  margin: 20rpx;
+  border: 1px solid #ccc;
+  padding: 10rpx;
+  box-sizing: border-box;
+  border-radius: 16rpx;
+}
+
+.coverCont{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.trainCover{
+  width: 100%;
+  display: block;
+}
+
+.trainName{
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 32rpx;
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding: 0 10rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.learnProgress{
+  line-height: 60rpx;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+
+.progress{
+  float: left;
+  width: 500rpx;
+}
+
+.learn{
+  float: right;
+}

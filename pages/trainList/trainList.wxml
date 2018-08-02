@@ -1,0 +1,14 @@
+<view class='container'>
+  <scroll-view style='height: 100%' scroll-y>
+    <view class='card' wx:for="{{list}}" wx:key="unique">
+      <view class='coverCont'>
+        <image class='trainCover' src='{{item.img}}'></image>
+        <text class='trainName'>{{item.traclass_name}}</text>
+      </view>
+      <view class='learnProgress'>
+        <progress class='progress' stroke-width='10' percent="{{item.rate}}" color='#1aad19' show-info />
+        <button class='learn' data-id='{{item.id}}' data-traid="{{item.tra_id}}" bindtap='tolearn' size='mini' type='primary'>学习</button>
+      </view>
+    </view>
+  </scroll-view>
+</view>
